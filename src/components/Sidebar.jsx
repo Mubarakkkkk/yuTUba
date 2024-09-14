@@ -21,7 +21,7 @@ const Sidebar = ( {selectedCategory, setSelectedCategory} ) => (
                     color: 'white'
                 }}
                 key={category.name}
-
+                title="Get Unique Name Of Youtube"
             >
                 <span
                     style = {{ color: category.name === selectedCategory ? 'white' :

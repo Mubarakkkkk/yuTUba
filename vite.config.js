@@ -34,7 +34,7 @@ export default defineConfig({
                             { filter: /src\\.*\.js$/ },
                             async (args) => ({
                                 loader: 'jsx',
-                                contents: await fs.readFile(args.path, 'utf8'),
+                                contents: await fs.readFile(args.path, 'utf-8'),
                             })
                         );
                     },

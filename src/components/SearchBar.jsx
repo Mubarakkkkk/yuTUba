@@ -32,10 +32,11 @@ function SearchBar() {
     <input 
       className = "search-bar"
       placeholder='Search...'
+      id = "search"
       value={searchTerms}
       onChange={ (e) => setSearchTerms(e.target.value) } 
     />
-    <IconButton type ="submit" sx={{ p: '10px', color: 'red'}}> 
+    <IconButton type ="submit" title = "submit search" sx={{ p: '10px', color: 'red'}}> 
       <Search />
     </IconButton>
    </Paper>
